@@ -1,0 +1,47 @@
+.slider-content {
+  background-image: url("../images/picture-maine1.png");
+  background-position: 0 -44px;
+  height: 464px;
+}
+.slider-content2 {
+  background-image: url("../images/picture-maine2.png");
+  background-position: 0 -44px;
+  height: 464px;
+}
+
+.slider-content3 {
+  background-image: url("../images/picture-maine3.png");
+  background-position: 0 -44px;
+  height: 464px;
+}
+
+.container-block .owl-nav {
+  display: none;
+}
+
+.container-block .owl-dots{
+  margin: 0 auto;
+  margin-top: -45px;
+  width: 95px;
+  height: 15px;
+
+  .owl-dot {
+    display: inline-block;
+    margin-left: 8px;
+    width: 10px;
+    height: 11px;
+    opacity: .5;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background-color: #000;
+    box-shadow: 0 0 5px rgba(252,252,252,.75);
+    &.active {
+
+      border: 2px solid black;
+      background-clip: padding-box;
+      background-color: #fff;
+      background-image: linear-gradient(bottom, #ff891f 0%, #ffad01 100%);
+
+    }
+  }
+}

@@ -1,0 +1,288 @@
+/** {margin: 0; padding: 0;}
+body {margin: 30px; font: 13px/1.5 "Trebuchet MS", Tahoma, Arial;}
+a {color: #0094D6;}
+p {padding: 7px 0;}
+h1 {font-size: 21px; font-weight: normal; margin: 0 0 30px;}
+*//*
+.tabs {
+  width: 388px;
+  min-height: 149px;
+  background-color: #ffffff;
+  margin: 0 0 30px;
+}
+.tabs__caption {
+  height:  30px ;
+  line-height: 29px;
+  list-style: none;
+  background: #FFF;
+}
+.tabs__caption li {
+  float: left;
+  display: inline;
+  margin: 0 1px -1px 0;
+  padding: 0 13px 1px;
+  color: #777;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border-bottom: none;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #F9F9F9;
+  position: relative;
+}
+.tabs__caption .active {
+  color: #444;
+  background-color: #ffffff;
+  padding: 0 13px 2px;
+  border-bottom: none;
+  border-right: 2px solid #f8f8f8;
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #fff 0%, #fff 0%, #fff 100%);
+  background-image: -moz-linear-gradient(top, #fff 0%, #fff 0%, #fff 100%);
+
+}
+.tabs__content {
+  display: none;
+  border-width: 0 1px 1px;
+  background: #EFEFEF;
+  padding: 0 12px;
+}
+.tabs__content.active {
+  display: block;
+  width: 388px;
+  height: 149px;
+  border-top: 2px solid #f8f8f8;
+  border-right: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: none;
+  background-clip: padding-box;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0,0,0,.6);
+  background-image: -webkit-linear-gradient(top, #fff 0%, #fff 0%, #fff 100%);
+  background-image: -moz-linear-gradient(top, #fff 0%, #fff 0%, #fff 100%);
+
+}*/
+
+
+////вариант 2////////////
+/*
+* { margin: 0; padding: 0; }
+body { font: 14px Georgia, serif; }*/
+
+.content-tab  {
+  background: #fff;
+  width: 390px;
+  min-height: 149px;
+
+  background-clip: padding-box;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,.6);
+  background-image: linear-gradient(top, #fff 0%, #fff 0%, #fff 100%);
+
+
+  border-top: 2px solid #f8f8f8;
+  border-right: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-radius: 5px;
+  /*border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: none;*/
+
+
+}
+/*
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
+*/
+
+
+
+
+.tabs {
+  line-height: 8px;
+  list-style: none;
+  margin: 21px auto 0;
+  width: 660px;
+  height: 30px;
+}
+.tabs li {
+  /* Makes a horizontal row */
+  float: left;
+
+  /* So the psueudo elements can be
+     abs. positioned inside */
+  position: relative;
+}
+.tabs a {
+  /* Make them block level
+     and only as wide as they need */
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color:  #f8f8f8;
+
+
+  /* Default colors */
+  color: black;
+  /*background: #ddc385;
+
+  /* Only round the top corners */
+  border-top: 1px solid #dddddd;
+  border-left: 2px solid #dddddd;
+  -webkit-border-top-left-radius: 15px;
+
+  -moz-border-radius-topleft: 15px;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  &:first-child {
+
+  }
+}
+.tabs li :first-child {
+
+  -moz-border-radius-topright: 15px;
+  -webkit-border-top-right-radius: 15px;
+}
+.tabs .active {
+  /* Highest, active tab is on top */
+  z-index: 3;
+}
+.tabs .active a:first-child {
+
+}
+
+.tabs .not-active a  {
+  padding-right: 24px;
+}
+.tabs .active a {
+  /* Colors when tab is active */
+  padding-bottom: 14px;
+  border-top: 1px solid #dddddd;
+  border-left: 2px solid #dddddd;
+ /* background: white;*/
+  color: black;
+  border-top: 1px solid #dddddd;
+  /*border-right: 1px solid #dddddd;*/
+  border-left: 2px solid #dddddd;
+  overflow: hidden;
+  /* border: 1px solid #fff; */
+  background-clip: padding-box;
+  background-image: -webkit-linear-gradient(top, #fff 0%, #fff 0%, #fff 100%);
+
+
+}
+
+/*.tabs li:before, */.tabs li:after,
+/*.tabs li a:before, */.tabs li a:after {
+  /* All pseudo elements are
+     abs. positioned and on bottom */
+  position: absolute;
+  bottom: 0;
+}
+/* Only the first, last, and active
+   tabs need pseudo elements at all */
+/*.tabs li:last-child:after,*/  .tabs li:last-child a:after,
+/*.tabs li:first-child:before, .tabs li:first-child a:before,*/
+.tabs .active:last-child:after   /*.tabs .active:before,
+.tabs .active a:after, /*.tabs .active a:before*/ {
+  content: "";
+}
+/*.tabs .active:before,*/ .tabs .active:after {
+ /* background: white;
+
+  /* Squares below circles */
+  z-index: 1;
+}
+/* Squares */
+/*.tabs li:before, .tabs li:after {
+  background: #ddc385;
+  width: 30px;
+  height: 30px;
+}*//*
+.tabs li:before {
+  left: -10px;
+}
+.tabs li:after {
+  right: -22px;
+  top: 16px
+}*/
+/* Circles */
+.tabs li :last-child:after /*.tabs li a:before*/ {
+  background-image: url("../images/radius22.png");
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 111px;
+  /*background-color: white;
+
+  /* Circles are circular */
+  /*-webkit-border-radius: 10px;
+  -moz-border-radius:    10px;
+  border-radius: 30px;
+  background: white;
+  border: solid #f8f8f8;
+
+  /* Circles over squares */
+  z-index: 2;
+}
+/*.tabs:after {
+  right: -58px;
+  top: -22px;
+  width: 50px;
+  height: 50px;
+  background: black;
+  z-index: 9999;
+}
+.tabs .active a:after, .tabs .active a:before {
+ /* background: #ddc385;*//*
+}
+/* First and last tabs have different
+   outside color needs */
+/*.tabs li:first-child.active a:before,*/
+.tabs li:last-child.active a:after {
+  /*background: #fff;
+
+  border: 3px solid #f8f8f8;*/
+}/*
+.tabs li a:before {
+  left: -20px;
+}/*
+.tabs li a:after {
+  right: -58px;
+  top: -15px;
+}*/
+
+.tabs li {
+  h4 {
+    color: #969696;
+    font-family: $source-sans-pro-regular;
+    font-size: $fs-base;
+    text-transform: capitalize;
+  }
+  h5 {
+    color: #ffa352;
+    font-family: $source-sans-pro-regular;
+    font-size: $fs-base;
+  }
+  h6 {
+
+
+  }
+}

@@ -1,0 +1,43 @@
+.content-product {
+  min-height: 380px;
+  background-color: $white;
+  h1 {
+    font-size: $fs-title-extra;
+    margin-bottom: 30px;
+    margin-top: 48px;
+    margin-left: 10px;
+    color: $black-light;
+  }
+  .picture-wrap {
+    background-image: url("../images/girl.png");
+    width: 178px;
+    height: 173px;
+    float: left;
+   /* shape-inside: polygon(0px, 150px);
+    shape-outside: inset(1% round 45%);*/
+    shape-outside: circle(50%);
+    background-repeat: no-repeat;
+  }
+  p {
+    margin-left: 10px;
+    text-align: justify;
+    color: $black-light;
+    line-height: 22px;
+    font-size: $fs-title-middle-small;
+  }
+
+  h2 {
+   /* margin-left: 80px;*/
+    margin-bottom: 30px;
+    margin-top: 48px;
+    text-transform: capitalize;
+    font-size: $fs-title-extra;
+    font-family: $source-sans-pro-light;
+  }
+
+  .right-section-content {
+    padding-left: 80px;
+  }
+
+
+}

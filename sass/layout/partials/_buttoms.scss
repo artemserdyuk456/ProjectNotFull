@@ -1,0 +1,87 @@
+
+.button {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 34px;
+  background-color: #edefef;
+  /*border: 1px solid rgba(0,0,0,.21);*/
+  border: 1px solid #795101;
+  border-radius: 18px 0 0 18px;
+  background-clip: padding-box;
+  /*background-color: #edefef;*/
+  background-image: linear-gradient(bottom, #e6e6e6 0%, #f5f9fb 100%);
+
+
+  background-image: linear-gradient(bottom, #e6e6e6 0%, #f5f9fb 100%);
+
+  &:active {
+    background-position: 15px 3px;
+    width: 45px;
+    height: 34px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #ffa101;
+    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, .36);
+    background-color: linear-gradient(bottom, #ffad01 0%, #ff891f 100%);
+    background-image: url("../images/woman.png");
+    background-repeat: no-repeat;
+    z-index: 9999;
+    .button-one {
+      display: none;
+    }
+  }
+  .button-one {
+    width: 16px;
+    height: 27px;
+    background-image: url("../images/orangew.png");
+    margin-left: 15px;
+    margin-top: 3px;
+    z-index: -9999;
+  }
+}
+
+.button-second-part{
+  display: block;
+  position: relative;
+  margin-left: -4px;
+  width: 45px;
+  height: 34px;
+  border: 1px solid #795101;
+  border-radius: 0 18px 18px 0;
+  background-clip: padding-box;
+  background-color: #edefef;
+  background-image: linear-gradient(bottom, #e6e6e6 0%, #f5f9fb 100%);
+
+  .button-two {
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 14px;
+    height: 27px;
+    background-image: url("../images/orangeman.png");
+    z-index: -9999;
+  }
+
+  &:active {
+    border-radius: 0 18px 18px 0;
+    background-color: #ffa101;
+    box-shadow: inset 2px 4px 4px rgba(0,0,0,.36);
+    background-color: linear-gradient(bottom, #ffad01 0%, #ff891f 100%);
+    background-image: url("../images/manwhite.png");
+    background-position: 10px 3px;
+    background-repeat: no-repeat;
+    .button-two {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

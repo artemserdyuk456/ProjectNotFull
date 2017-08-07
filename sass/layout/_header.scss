@@ -1,0 +1,21 @@
+header {
+  background-color: $white;
+  min-height: 107px;
+  padding-left: 30px;
+  padding-top: 16px;
+  .logo {
+    cursor: pointer;
+    padding-top: 10px;
+    .header {
+      margin: 0 auto;
+      width: 278px;
+      height: 82px;
+      /*
+      width: 320px;
+      height: 90px;*/
+      background-image: url("../images/header2.png");
+
+    }
+  }
+
+}

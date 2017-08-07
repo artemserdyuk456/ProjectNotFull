@@ -1,0 +1,53 @@
+.slider-small {
+  max-width: 380px;
+}
+.content-slider {
+  background-image: url("../images/slidergirl.png");
+  height: 70px;
+  width: 70px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+
+}
+
+.content-slider:hover {
+  cursor: pointer;
+  /*background: rgba(0,0,0,.58);*/
+  /*background-image: url("../images/man.png");
+  background-repeat: no-repeat;
+  background-position: 40px 40px ;*/
+}
+.content-slider:hover:before{
+  content: "Sexy girl";
+  color: $white;
+  font-size: $fs-base;
+  font-family: $source-sans-pro-regular;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  /*opacity: 0.28;*/
+  background: rgba(0,0,0,.58);
+  height: 70px;
+  background-image: url("../images/double.png");
+  background-repeat: no-repeat;
+  background-position: 15px 40px;
+
+}
+
+.owl-prev {
+  position: absolute;
+  top: 26px;
+  left: -31px;
+  font-size: 0px;
+  background-image: url("../images/arrowl.png");
+  width: 22px;
+  height: 20px;
+}
+.owl-next {
+  position: absolute;
+  top: 26px;
+  right: -31px;
+  font-size: 0px;
+  background-image: url("../images/arrowr.png");
+  width: 22px;
+  height: 20px;
+}

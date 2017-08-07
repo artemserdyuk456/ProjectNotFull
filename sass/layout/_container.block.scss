@@ -1,0 +1,183 @@
+.container-block {
+  width: 100%;
+  min-height: 504px;
+  background-image: url("../images/content.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+
+  section {
+    margin: 0 auto;
+    height: 485px;
+    max-width: 960px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url("../images/shadow.png");
+    .shadow {
+      height: 466px;
+      border: $border-gray-rgba;
+      border-radius: 4px;
+      background-clip: padding-box;
+      background-color: $bg-orange;
+      box-shadow: $shadow-box-black-dark-dark;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+
+    ///////////section 2
+
+    .first-section-block {
+      padding-top: 28px;
+      padding-left: 15px;
+      border-left: $border-slider;
+      height: 464px;
+
+      .text {
+        font-size: $fs-middle-large;
+        width: 100%;
+      }
+      .left-content {
+        display: block;
+        width: 60px;
+        ol li {
+          padding-top: 30px;
+          &:first-child {
+            padding-top: 20px;
+          }
+        }
+
+      }
+
+      .right-content {
+        margin-left: 100px;
+        max-width: 350px;
+        min-height: 345px;
+        .button-main-two {
+          /*width: 142px;*/
+          margin-top: 10px;
+          margin-left: 18px;
+        }
+        .button-main {
+          margin-top: 10px;
+        }
+        .magnifier {
+          margin-top: 19px;
+        }
+        .drop-data {
+          margin-top: 14px;
+        }
+        .drop-month {
+          margin-left: 8px;
+          margin-top: 14px;
+        }
+        .drop-yer {
+          margin-left: 8px;
+          margin-top: 14px;
+        }
+        .example {
+          float: left;
+          margin-left: -8px;
+
+        }
+        .button-start {
+          margin-top: 25px;
+          float: left;
+        }
+      }
+
+      p {
+        color: $gray-text;
+        font-size: $fs-title-small;
+      }
+      ul > li {
+        display: inline-block;
+      }
+      ul > li > ul > li {
+        font-size: 0;
+      }
+      .text, .text2, .button-main, .button-main-two, .magnifier,
+      .left-content, .drop-data, .drop-month, .drop-yer {
+        float: left;
+      }
+
+      .text2 {
+        /* margin-left: 10px;*/
+      }
+      .magnifier {
+        margin-left: 20px;
+        text-align: right;
+        width: 100px;
+        height: 20px;
+        background-image: url("../images/magni.png");
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+
+      .text3 {
+        float: left;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+
+      .block-tow {
+        float: left;
+        margin-top: 12px;
+        .search {
+          text-align: center;
+          width: 318px;
+          height: 34px;
+          border: 1px solid rgba(209, 0, 0, .49);
+          border-radius: 18px;
+          background-clip: padding-box;
+          /* background-color: #ffd40d;*/
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, .33);
+          background-image: linear-gradient(bottom, #f5f9fb 0%, #e6e6e6 100%);
+        }
+      }
+
+      .tooltip {
+        float: left;
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 17px;
+        height: 17px;
+        background-image: url("../images/cross.png");
+
+      }
+      .all-right {
+        float: left;
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 21px;
+        height: 19px;
+        background-image: url("../images/nocross.png");
+
+      }
+    }
+
+
+  }
+
+
+}
+/*
+input:valid {
+  content: url("../images/cross.png");
+  /*display: block;
+  padding-left: 5px;
+  width: 17px;
+  height: 17px;
+
+
+}
+input:invalid {
+  content: url("../images/nocross.png");
+  padding-left: 5px;
+}
+input[type="number"] {
+  margin-right: -3px;
+}
+.submit {
+  float: right;
+}*/
